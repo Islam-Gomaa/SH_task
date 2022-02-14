@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="First Task TC 1(failed)">
+    <classes>
+      <class name="TestCases.Add_an_element_to_cart_pay_bank">
+        <methods>
+          <include name="Adding_an_element_to_cart_chrome" invocation-numbers="0"/>
+          <include name="Adding_an_element_to_cart_firefox" invocation-numbers="0"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- TestCases.Add_an_element_to_cart_pay_bank -->
+    </classes>
+  </test> <!-- First Task TC 1(failed) -->
+  <test thread-count="5" name="First Task TC 2(failed)">
+    <classes>
+      <class name="TestCases.Add_an_element_to_cart_pay_check">
+        <methods>
+          <include name="Adding_an_element_to_cart_firefox" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="Adding_an_element_to_cart_Edge" invocation-numbers="0"/>
+          <include name="Adding_an_element_to_cart_chrome" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.Add_an_element_to_cart_pay_check -->
+    </classes>
+  </test> <!-- First Task TC 2(failed) -->
+  <test thread-count="5" name="Second  Task TC 1(failed)">
     <classes>
       <class name="TestCases.Upload_File">
         <methods>
           <include name="close"/>
+          <include name="Upload_File_Edge"/>
+          <include name="Upload_File_firefox"/>
           <include name="Upload_File_chrome"/>
         </methods>
       </class> <!-- TestCases.Upload_File -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Second  Task TC 1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
